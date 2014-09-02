@@ -1,3 +1,16 @@
+import org.apache.lucene.index.IndexWriter;
+import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.document.Document;
+import org.apache.lucene.document.Field;
+import org.apache.lucene.store.FSDirectory;
+import org.apache.lucene.store.Directory;
+import org.apache.lucene.util.Version;
+
+import java.io.File;
+import java.io.FileFilter;
+import java.io.IOException;
+import java.io.FileReader;
+
 public class Indexer {
   
   public static void main(String[] args) throws Exception {
